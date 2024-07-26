@@ -6,9 +6,9 @@ RUN pip install -r requirements.txt
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 
-# Для запуска введите две команды:
+# To run, enter two commands:
 # docker build . --tag fastapi_app
 # docker run -p 80:80 fastapi_app
 
-# Или одной командой
+# Or one command
 # docker build . --tag fastapi_app && docker run -p 80:80 fastapi_app
