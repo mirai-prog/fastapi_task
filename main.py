@@ -6,8 +6,8 @@ from router import router as tasks_router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    await delete_tables()
-    print("[INFO] The base has been cleared [/INFO]")
+    # await delete_tables()
+    # print("[INFO] The base has been cleared [/INFO]")
     await create_tables()
     print("[INFO] The base is ready for work [/INFO]")
     yield
